@@ -25,7 +25,7 @@ export const Scene = () => {
   const sphereRef = useRef<Object3D>(null!);
 
   return (
-    <mesh>
+    <>
       <OrbitControls makeDefault />
 
       <directionalLight position={[1, 2, 3]} intensity={4.5} />
@@ -75,6 +75,6 @@ export const Scene = () => {
           <meshNormalMaterial />
         </Text>
       </Float>
-    </mesh>
+    </>
   );
 };
